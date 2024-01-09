@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+        <style>
+        /* 
+
+            se colocado um 
+            display: inline-block;
+            em um box-level,
+            ele vai ocupar todo o espaço
+            do conteudo na linha, 
+            mas não será possivel configurar 
+            a altura e largura
+
+            ==== ==== ====
+
+            se colocado um display: block;
+            em uma inline-level
+            ela se torna uma box-level
+            ocupara o espaço da linha
+
+        */
+        
+                h1 {
+                background-color: rgb(170, 169, 169);
+                color: darkblue;
+                height: 300px;
+                width: 300px;
+
+                border: 10px solid darkslategrey;
+                
+                padding: 10px 10px 10px 10px;
+
+                margin: 10px 10px 10px 10px auto;
+
+                outline: 5px dashed salmon;
+            }
+            
+            a {
+                border: 1px dashed darkred;
+
+                padding: 0.5px
+            }
+
+        </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://www.twitch.tv/silvestrebruno_" target="_blank" >links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+
+
+
+</body>
+</html>

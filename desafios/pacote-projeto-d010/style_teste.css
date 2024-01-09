@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url();
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(fontes/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: '_idroid';
+    src: url(__MACOSX/fontes/._idroid);
+}
+/* cores TOPO > inicio #61d881 / meio > #46a05f / fim #2d6c41<*/
+/* cor para o NAV > #255c38 */
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+
+    header {
+    background-image: linear-gradient(to bottom, #5dd17e, #46a05f, #2d6c41); /* degradê no topo */
+    padding: 20px 0px 0px 0px; /* preenchimento da caixa */
+    margin: 0px; /* margem da caixa */
+    border: 0px;
+    height: to top, 100%; /* pegando 100% do topo, mas só funciona com a regra no começo " *{ height: 100%; }" */
+    }
+
+    header > h1 { 
+        font-family: 'roboto-bold'; /* font h1 topo */
+        font-size: 2.2em; /* tamanho da fonte h1 topo */
+        color: white; /* cor da fonte h1 topo */
+        text-align: center; /* alinhamento h1 topo */
+    }
+
+    header > p { 
+        font-family: Arial, Helvetica, sans-serif; /* font p topo */
+        font-size: 1.2em; /* tamanho da font p topo */
+        color: rgb(255, 255, 255); /* cor da fonte p topo */
+        text-align: center; /* alinhamento p topo */
+    }
+
+    nav {
+        background-image: #255c38; /* cor de fundo nav */
+        color: white; /* cor da fonte nav */
+        font-weight: bold; /* negrito nav */
+        padding: 10px; /* preenchimento nav */
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.300); /* sombreamento na caixa */
+    }
+
+    nav > a {
+        text-decoration: none; /* elemento nada na fonte nav */
+        color: white; /* cor da fonte nav link */
+        font: bold; /* negrito nav */
+        text-align: left; /* começa esquerda */
+        margin-right: 25px; /* espaçamento entre navs */
+    }
+
+    body {
+    font-family: sans-serif; /* font corpo */
+    background-color: #84e1ad; /* cor de fundo */
+    color: black; /*cor da fonte */
+    margin: 0px; /* margem */
+    }
+
+    main {
+        background-color: white; /* cor de fundo main */
+        padding: 30px; /* preenchimento main  */
+        margin: 2px 100px 5px 100px; /* margens top left bottom right em main */ 
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.308); /* sombreamento na caixa */
+    }
+
+    section > article > h1 { /* h1 dentro de artigo>seção */
+        font-family: idroid, _idroid; /* fonte importada*/
+        font-size: 2.5em; /* tamanho da fonte em */
+        color: #2d6c41;
+    }
+
+    h2 {
+        font-family: idroid, _idroid;
+        color: #2d6c41;
+        background-image: linear-gradient(to right, #C5EBD6, #E6F7ED, #ECF8F1, #fafdfc);
+    }
+
+    article .fundovideo {
+        background-color: #2d6c41;
+        border: 25px solid #2d6c41 ;
+        padding: 1px;
+        margin: 1px solid #2d6c41;
+        text-align: center;
+    }
+
+    aside {
+        background-color: #5dd17e69;
+        border-radius: 10px 10px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+}
+
+    h4 {
+        background-image: linear-gradient(to right, #5dd17e, #46a05f) ;
+        padding: 8px;
+        border-radius: 10px 10px 0px 0px;
+    } 
+
+/* abaixo a CSS para Lista ter CheckMarker Symbol*/
+    ul {
+    list-style: none; /* estilo da lista */
+    text-decoration: underline;
+    display: inline-block; /* coloca as duas listas, uma ao lado da outra */
+    }
+  
+    ul li:before { /* "antes da lista" */
+    content: '✔';  /* antes de uma lista tem um CheckMarker */
+    }
+
+    .bot a {
+        text-decoration: none;
+        color: #5dd17e;
+        font: bold;
+    }
+
+    footer > p {
+        background-color: #2d6c41;
+        color: white;
+        
+        text-align: center;
+        border: 5px solid #2d6c41 ;
+        padding: 1px;
+        margin: 1px solid #2d6c41;
+    }

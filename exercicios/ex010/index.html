@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="potionicon.ico" type="image/x-icon">
+    <title>Trabalhando Com Links</title>
+</head>
+<body>
+<h1>Usando Links Externos</h1> 
+
+    <!--Quando você adiciona a tag A HREF="link.desejado.aqui" vai adicionar um link diretório na marcação, não esqueça de fechar a tag A (obrigatóriamente) -->
+    
+<p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositório publico no github</a></p>
+
+    <!--Adicionando target="_blank" rel="external"
+quando clicar no link diretório, vai abrir o link em uma nova aba, assim o seu site continua sendo acessado-->
+
+<p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no youtube</a></p>
+
+<h2>Usando Links Internos</h2>
+<!--Quando você usa target="_self" você informa que está navegando no próprio site se for acessado o link-->
+<p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+<!--REL NEXT quer dizer que vai para a próxima página-->
+<!--usando REL NEXT E PREV você cria um sistema de navegação que você informa o cliente qual próximo site seguir-->
+<!--Usando esse sistema de navegação, você está dando mais valor para o seu site-->
+
+<p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <h2>Links para Downloads</h2>
+    <ol>
+<li><a href="livro/listashtml.pdf" download="listashtml.pdf" type="application/pdf">Baixe o Livro PDF</a></li>
+        <li><a href="livro/listashtmlcompact.zip" download="listashtmlcompact" type="application/zip">Livro comptado em ZIP</a></li>
+
+    </ol>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "UTFT-8";
+
+ /*
+        em HTML tudo que é ID = em CSS # (só pode um elemento)
+        EM HTML tudo que é CLASS = em CSS . (pode vários elementos, sem precisar de virgulas, apenas espaço)
+ */
+
+    body {
+        background-color: rgb(205 255 203);
+        font-family: Arial, Helvetica, sans-serif;
+
+        h1 {
+            color: rgb(4 109 0);
+        }
+
+        h1#principal {
+                    text-align: center;
+                    background-color: rgb(4 109 0);
+                    color: white;
+                    }
+
+        
+        h2 {
+            color: rgb(51 77 49);
+        }
+
+        .basico   {
+                    color: #3c805e;
+                    font-weight: bolder;
+        }
+
+        .intermediario {
+                    color: #80793c;
+        }
+
+        .avancado {
+                    color: #803c3c;
+        }
+
+        .destaque {
+            background-color: #c5c56070;
+        }
+
+
+
+
+        }

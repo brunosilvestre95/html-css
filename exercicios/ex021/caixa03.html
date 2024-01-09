@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/potionicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+
+        <style>
+            body {
+                font-family: sans-serif; /* fonte do corpo*/
+                background-color: dimgray; /* cor de fundo do corpo do site*/
+                margin: 0px; /* margem do corpo */
+            }
+            
+            header { /* Divisor(div) do cabeçalho do site*/
+                background-color: white; /* cor de fundo do cabeçalho*/
+                padding: 10px; /* preenchimento da caixa*/
+                margin: 10px;/* margem da caixa*/
+            }
+
+                nav {
+                background-color: brown;
+                padding: 5px;
+                }
+            
+                nav > a {
+                text-decoration: none;
+                color : white;
+                font-weight: bold;
+                margin-right: 30px;
+            
+                }
+
+            main {/* divisor(div) da main do corpo*/
+                background-color: white; /* cor de fundo da main*/
+                padding: 10px;  /* preenchimento da caixa*/
+                margin: 10px; /* margem da caixa*/
+                }
+
+
+                 #assuntos {
+                    background-color: rgb(226, 226, 226);
+                    padding:  5px;
+                }
+
+
+
+                article {
+                    background-color: lightgrey;
+                    padding: 5px;
+                }
+
+                article > aside {
+                    background-color: rgb(160, 160, 160);
+                }
+            
+            footer { /* divisor(div) do rodapé */
+                background-color: black; /* cor de fundo do rodapé */
+                color: white; /* cor da fonte */
+                text-align: center; /* alinhamento do texto no rodapé*/
+                padding: 1px; /* preenchimento da caixa*/
+                margin: 0px; /* margem da caixa*/
+                }
+
+        </style>
+
+</head>
+<body>
+        <header>
+            <h1>Meu Site</h1>
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="assuntos">
+                <h2>Esportes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium voluptates quam laboriosam quisquam fuga. Sint officiis doloribus deserunt. Cum, debitis non quis accusantium adipisci aliquam praesentium doloribus eos eaque asperiores!</p>
+                <h2>Política</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente cupiditate quod, cum fugit beatae, aspernatur rerum delectus nesciunt iure eum mollitia labore itaque laboriosam animi ea incidunt tempora totam?</p>
+                <h2>Tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestiae? Voluptatum laudantium eos numquam esse ex molestiae quo reprehenderit totam quidem illo necessitatibus, eum reiciendis ipsam, officiis omnis iste maiores.</p>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam eius officiis voluptatum culpa esse natus sed illo laborum nesciunt sunt! Repudiandae id at doloribus labore iure! Necessitatibus provident debitis illum.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex nihil perferendis aut, odit blanditiis, nisi, exercitationem ea soluta atque excepturi optio cupiditate dicta natus temporibus quasi doloribus pariatur quaerat. Nulla.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore aperiam nemo culpa! Saepe asperiores ipsa amet optio dolores animi, eveniet possimus ab fugit, rem eum, aperiam minus accusantium unde?
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <aside>
+                        <p>Artigo escrito por <a href="https://www.instagram.com/silvestrebruno_/">SilvestreBruno_</a></p>
+                    </aside>
+                </article>
+
+            </section>
+
+
+
+        </main>
+
+        <footer>
+            <p>Desenvolvido pelo <a href="https://www.instagram.com/silvestrebruno_/">SilvestreBruno_</a></p>
+        </footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
