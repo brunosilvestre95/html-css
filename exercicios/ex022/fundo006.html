@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+<style>
+    /* esse exercício foi para mostrar uma forma ""errada"" de se usar a imagem de fundo por conta da distorçao */
+    body {
+        /* com essa configuração de height, a imagem de fundo pega 100% do fundo da pagina, mas pode distorcer a imagem e para resolver isso é a útilma coisa qu queremos */
+        height: 100vh; /* 100vh; e não 100% */
+        background-color: black; /* cor de fundo para carregar a página e caso demore para carregar a imagem, o cliente poder consumir o conteúdo */
+        background-image: url(imagens/wallpaper002.jpg); /* endereço da imagem local */
+        background-position: center center; /* posicionamento de fundo */
+        background-repeat: no-repeat; /* sem repetir */
+        background-size: 100% 100%;/* imagem pegando 100% de altura e largura */
+    }
+
+    main { /* configuração da caixa de conteúdo */
+        background-color: whitesmoke;
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid dark blue;
+        border-radius: 15px;
+    
+    }
+    
+    
+</style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, ducimus numquam natus voluptatibus ratione rerum itaque veritatis. Cumque ab deleniti voluptatibus! Vero asperiores maxime earum id deleniti expedita velit tempore? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis illo itaque quidem recusandae nam, odit ipsum voluptates molestiae rerum! Dolores incidunt doloribus dolorum culpa veniam nisi omnis optio architecto. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda non ipsum quo eos voluptates sequi vitae veritatis, quas laudantium neque dolorem sint cum quos! Dicta sed repudiandae culpa dolore!Lorem
+        </p>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+<style>
+    body {
+        /* com essa configuração de height, a imagem de fundo pega 100% do fundo da pagina, mas pode distorcer a imagem e para resolver isso é a útilma coisa qu queremos */
+        height: 100vh; /* 100vh; e não 100% */
+        background-color: black; /* cor de fundo para carregar a página e caso demore para carregar a imagem, o cliente poder consumir o conteúdo */
+        background-image: url(imagens/wallpaper002.jpg); /* endereço da imagem local */
+        background-position: center center; /* posicionamento de fundo */
+        background-repeat: no-repeat; /* sem repetir */
+        background-size: 100% 100%;/* imagem pegando 100% de altura e largura */
+    }
+
+    main { /* configuração da caixa de conteúdo */
+        background-color: whitesmoke;
+        width: 400px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid dark blue;
+        border-radius: 15px;
+    
+    }
+    
+    
+</style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, ducimus numquam natus voluptatibus ratione rerum itaque veritatis. Cumque ab deleniti voluptatibus! Vero asperiores maxime earum id deleniti expedita velit tempore? <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque perspiciatis illo itaque quidem recusandae nam, odit ipsum voluptates molestiae rerum! Dolores incidunt doloribus dolorum culpa veniam nisi omnis optio architecto. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda non ipsum quo eos voluptates sequi vitae veritatis, quas laudantium neque dolorem sint cum quos! Dicta sed repudiandae culpa dolore!Lorem
+        </p>
+    </main>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de Fundo</title>
+<style>
+    /* exercício a vera */
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
+    
+</style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus culpa distinctio dolorum incidunt dolor quam in, quis molestias dicta aut minima. Magni tempora tenetur temporibus, ab quae delectus? Eveniet, voluptate!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit corporis consequatur, earum soluta iure repellendus. Iste veritatis fuga beatae minima, dolorum tenetur voluptates, assumenda natus laboriosam aliquam vero fugiat!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cupiditate dolores magnam, perferendis numquam blanditiis omnis adipisci distinctio quo consequatur soluta a quas nisi mollitia modi quis laudantium fugiat veniam!
+        </p>
+    </main>
+</body>
+</html>
