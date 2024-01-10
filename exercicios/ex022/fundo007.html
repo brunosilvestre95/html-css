@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        /* 
+            
+            todo posicionamento de uma box em html é relativo
+            todo posicionamento de uma box dentro da outra é absoluto
+            exemplo: posicionamento da section é relativo
+            exemplo: posicionamento de article é absoluto
+
+
+        */
+        #container { /* id de section */
+            background-image: url('imagens/target001.png');/* img de fundo/destino */
+            background-size: 100% 100%; /* aplicação do tamanho da img de fundo */
+            position: relative;
+            height: 96vh;/* altura da area branca do site */
+            padding: 10px;
+            background-color: purple;
+
+        }
+
+        #conteudo { /* id de article dentro da section */
+            background-image: url('imagens/target001.png');/* img de fundo/destino */
+            background-size: 100% 100%; /* aplicação do tamanho da img de fundo */
+
+            position: absolute; /* quando é absoluta a posição, você pode alterar left e right */
+            height: 200px;/* altura de article */
+            width: 400px;/* largura de article */
+            background-color: yellow;
+            /* margin: auto; configuração da margem do article */
+            left: 50%;/* configuração da caixa, desde a borda da esquerda da seção, até a ponta esquerda de article */
+            top: 50%; /* configuração da caixa, desde o topo da borda da seção, até a ponta esquerda de article */
+                    
+                    /* 
+            você pode alterar LEFT e RIGHT, se a posição de article for absoluta 
+
+            também é possível trabalhar com left e right em pixels, porcentagens...
+                    */
+
+            /* transform = pode alterar o posicionamento da imagem, de formas diferentes 
+            com translate alteramos o posicionamento da imagem, esquerda, direita, cima, baixo
+            nesse caso usamos em % */
+            transform: translate(-50%, -50%); /* separados por "," */
+
+        }
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
