@@ -1,0 +1,79 @@
+    <!--
+
+	HIERARQUIA DE TABLEAS (SIMPLES)
+        	TABLE = tabela
+            		TABLE ROW = Linha de tabela
+                		TABLE HEADER =  Cabeçalho de tabela
+                    			TABLE DATA = dado de tabela 
+
+	**Se a hierarquia da tabela não for seguida,
+		o dado que foi digitado aparecerá ao lado de fora e antes ou depois da tabela
+
+
+Para estilizar uma tabela é usado CSS
+
+body {
+	font-family: Arial }
+
+table {
+	width: 500px }
+
+td, th {
+	border-style: 1px solid black }
+	*É PRECISO SEPARAR TD E TH POR UMA VÍRGULA*
+												-->
+				*Tabelas Simples*
+
+
+exemplo tabela com 3linhas:
+<table>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+</table>
+
+
+			*alinhamento de tabela*
+
+            text-align: center; *tem outros valores também*
+            vertical-align: middle; *também tem outros valores*
+
+
+		****títulos de colunas e linhas********
+	título de coluna => <th scope="col"> </th>
+	título da linha => <td scope="row"> <td>
+
+=============================================================================================
+
+				*Tabela Grande*
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+                TABLE
+                    tr, td, th
+                TBODY
+                    tr, td, th
+                TFOOT
+                    tr,td, th
+    -->
+
+
+
+== == == == == ==
+
+		*EFEITO ZEBRADO*
+
+
+usar subclasse para cada uma linha ter uma cor de fundo diferente
+ex
+	        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+[toda tr que for filha de tbody, a cada linha tera uma cor diferente]
