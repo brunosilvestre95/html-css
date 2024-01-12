@@ -16,9 +16,16 @@
             background-color: lightgray;
         }
 
+        thead > tr > th {
+            position: sticky; /*grudavel*/
+            top: 0; /* ele vai colar na */
+            background-color: gray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* config comportamental da tabela */
         }
 
         td, th {
@@ -26,7 +33,7 @@
             padding: 10px;
         }
 
-        thead, tfoot {
+        thead, tfoot { 
             background-color: gray;
             color: white;
         }

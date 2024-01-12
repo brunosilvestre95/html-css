@@ -77,3 +77,43 @@ ex
         }
 
 [toda tr que for filha de tbody, a cada linha tera uma cor diferente]
+
+outro exemplo:
+
+			efeito zebrado, linha par terá uma cor,
+						linha ímpar tera uma cor diferente
+			
+	tbody > tr:nth-child(odd) {
+		background-color: white;
+	
+	tbody > tr:nth-child(even) {
+		background-color: lightgray;
+
+
+		**efeito de manter titulo da coluna em tabelas muito longas**
+	/* adicionando position stick para toda */
+	
+	thead > tr > th {
+		position: stick; }
+		
+	/* adicionando top: 0;	*/
+		top:0;
+		background-color: [cor de fundo do titulo da coluna];
+
+	/* em TABLE, adicionar position relative */
+	table {
+		position: relative;}
+
+exemplo de cod:
+		        thead > tr > th {
+            position: sticky; /*grudavel*/
+            top: 0; /* ele vai colar na */
+            background-color: gray;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /* config comportamental da tabela */
+        }
+	
