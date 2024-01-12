@@ -117,3 +117,18 @@ exemplo de cod:
             position: relative; /* config comportamental da tabela */
         }
 	
+
+=============================================================================================
+
+
+ 			**mesclagem de células**
+
+	para mesclagem de coluna
+			adicionando COLDSPAN="[nº de qtd de células]" dentro da tag
+		ex:
+			<td colspan="2">[TEXTO CONTEÚDO]</td>
+	
+	para mesclagem de célula na linha
+			adicionando ROWSPAN="[nº de qtd de células]" dentro da tag
+		ex:
+			<td rowspan="2">[TEXTO CONTEÚDO]</td>
