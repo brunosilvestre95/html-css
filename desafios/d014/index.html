@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(100, 148, 237, 0.911);
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        th {
+            background-color: rgba(0, 0, 139, 0.315);
+            color: black;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th.principal {
+            color: white;
+        }
+
+        th.secundario {
+            background-color: rgba(100, 148, 237, 0.911);
+        }
+
+        td.pvalor, th.valor {
+            background-color: rgba(0, 0, 139, 0.315);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 			*alinhamento de tabela*
+
+            text-align: center; *tem outros valores também*
+            vertical-align: middle; *também tem outros valores*
+
+
+		****títulos de colunas e linhas********
+	título de coluna => <th scope="col"> </th>
+	título da linha => <td scope="row"> <td>-->
+            <!--
+        ANATOMIA PARA TABELAS GRANDES
+                TABLE
+                    tr, td, th
+                TBODY
+                    tr, td, th
+                TFOOT
+                    tr,td, th
+                    
+      ======      ======     ======   ======    ======   ======      ======  ======  ======  ======  
+
+                    	escope="col"
+				grupo de uma coluna
+
+	scope="colgroup"
+				grupo de varias colunas
+	scope="row"
+				grupo dee linha
+	scope="rowgroup" 
+				grupo de linhas
+
+	** o tfoot, mesmo sendo um total ele também é um "row" um" **
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2" class="principal">Área</th>
+                <th scope="col" rowspan="2" class="principal">Disciplinas</th>
+                <th scope="colgroup" colspan="2" class="principal">Notas</th>
+                <th scope="col" rowspan="2" class="principal">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="principal">Nota 1</th>
+                <th scope="col" class="principal">Nota 2</th>
+            </tr>
+            <tr>
+        </thead>
+        <tbody>
+                <th rowspan="4" class="secundario">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="colgroup" colspan="4" class="thvalor" style="color: white;">Média de Exatas</th>
+                <td class="pvalor" style="color: white;">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="secundario">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th class="thvalor" colspan="4" style="color: white;">Média de Humanas</th>
+                <td class="pvalor" style="color: white;">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
