@@ -157,3 +157,55 @@ existem 4 tipos de escope group
 
 
 =============================================================================================
+
+ 			**AGRUPANDO COLUNAS COM COLGROUP**
+
+	criando a tag <colgroup> e dentro adicionando as tags "col class" desejadas
+	usando "<col class="[nome para o grupo da coluna">
+		é possível usar nas configuraçoes da css
+	"col.[nome-da-coluna] { }	
+		também é possível adicionar mais de uma coluna separando por vírgula
+	"col.[nome-da-coluna], [nome-da-coluna] { }
+
+			EXEMPLO:
+		CSS:
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.csexo, col.cidade {
+            background-color: yellow;
+        }
+
+		HTML:
+	
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+
+	== TAMBÉM É POSSÍVEL EM UMA COLUNA APLICAR A MSM CONFIGURAÇOES NAS ADJACENTES A SEGUIR ==
+	
+	basta adicionar a "span="[nº de colunas desejadas a msm configuraçoes]
+		exemplo:
+	        <col class="cnome" span="3">
+	[usando a configuraçao nas css]
+		exemplo da css: 
+		col.cnome { background-color="red" }
+	assim as próximas 3 colunas de "cnome" terão a cor fundo vermelho
