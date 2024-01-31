@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Use de iframes</title>
     <style>
         body {
@@ -13,7 +14,6 @@
             height: 400px;
             border: 2px solid black;
         }
-
     </style>
 </head>
 <body>
@@ -25,7 +25,13 @@
         <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolorem ex deserunt. Libero dicta, id placeat adipisci tempore qui fugiat optio quo, ratione ex quod quisquam quos labore obcaecati quae.</p>
-    <iframe id="tela" name="frame" src="" frameborder="0">
+    <iframe id="tela" name="frame" srcdoc="
+    <h1>Escolha uma das opções acima</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro a mollitia unde eos quasi beatae, iste possimus modi in nihil natus exercitationem ullam similique quo doloremque, qui, perferendis libero fuga.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum modi ad rem. Nihil quibusdam officia cupiditate modi fugit repudiandae facere, quasi esse corrupti harum ex voluptates nisi perferendis eius? Corporis!
+    </p>
+    <img src='imagens/logo-curso-em-video.png'>
+    ">
         <p>Infelizmente Seu navegador não é compatível com isso.</p>
     </iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et asperiores cupiditate odio porro ratione rerum saepe blanditiis atque vitae a magni distinctio, numquam ipsa autem aliquid laudantium quod molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum reiciendis omnis tempore ipsam impedit totam labore mollitia eaque porro! Maiores cupiditate pariatur doloremque repellendus, molestias blanditiis culpa vel corporis!</p>
