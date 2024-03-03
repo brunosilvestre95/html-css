@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário-2</title>
+</head>
+<body>
+    <h1>Teste de Formulpário</h1>
+<form action="cadastro.php" method="post" autocomplete="on"> <!--liga/desliga o autocomplete, nomes que ja foram digitados-->
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="10" placeholder="nome do usuário" autocomplete="username"> <!--name para php e html, e id para o label
+        adicionando parametro required cria a obrigação de preencher o campo
+        adicionando minlength="número de quantidade" obriga quantidade minima de dígitos para preencher
+        adicionando max leength cria obrigação de maximo de dígitos no campo
+        size faz mostrar um máximo de dígitos
+        placeholder cria uma dica dentro da caixa para o cliente saber o que preencher
+        autocomplete="username" sugere um nome de usuario
+        -->
+    </p>
+    <p>
+        <label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="10" placeholder="mínimo 8 dígitos" autocomplete="current-password"> <!--input do tipo password para criar senha
+        adicionando parametro required cria a obrigação de preencher o campo
+        adicionando minlength="número de quantidade" obriga quantidade minima de dígitos para preencher
+        adicionando max leength cria obrigação de maximo de dígitos no campo
+        size faz mostrar um máximo de dígitos
+        placeholder cria uma dica dentro da caixa para o cliente saber o que preencher
+        autocomplete="current-password" sugere uma senha-->   
+    </p>
+    <p>
+        <input type="submit" value="Enviar"> <!--input do tipo submit para criar o botão de enviar-->
+    </p>
+    <p>
+        <input type="reset" value="Limpar"> <!--input do tipo reset para criar botão de enviar-->
+    </p>
+</form>
+</body>
+</html>
