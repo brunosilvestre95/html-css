@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Estilo para Impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace; /*fonte monoespaçada é mais facil de ler no papel*/
+    font-size: 1.5em; /* tamanho da fonte para facilitar leitura*/
+    line-height: 1.5em; /* espaçamento entre as linhas */
+}
+
+menu { /* caso tenha mais de um menu, especificar por id */
+    display: none; /* esconder o menu em folha de impressão, não faz sentido ter menu em folha :v */
+}
+
+article {
+    width: 100%; /* na impressora n faz sentido ter a largura limitada como na tela do site 
+    com essa configuração ele ocupa 100% da folha impressa */
+}
+
+article::after {
+    content: 'Este artigo foi impresso através do site www.cursoemvideo.com';
+}

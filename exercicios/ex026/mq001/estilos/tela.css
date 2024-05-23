@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(158, 158, 158);
+}
+
+header > h1 {
+    text-align: center; /* centralizar o título no cabeçalho*/
+}
+
+menu ul {
+    list-style-type: none; /* esconder o simbolo na lista do menu */
+    background-color: gray; /* cor de fundo do menu */
+}
+
+menu li {
+    display: inline-block; /* para ficar o menu um ao lado do outro*/
+    color: white; /* cor da fonte */
+    background-color: rgb(75, 75, 75); /* cor de fundo dos links no menu */
+    padding: 10px; /* espaçamento da lista no menu */
+}
+
+article {
+    width: 600px; /* largura do menu de 600px, para ficar menu o artigo */
+    display: block; /* block para deixar o menu centralizado */
+    margin: auto; /* para ficar mais adaptavel*/
+}
