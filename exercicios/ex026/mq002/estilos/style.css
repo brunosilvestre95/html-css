@@ -12,7 +12,7 @@ html, body {
     height: 100vh;
     background-color: #233eff;
     background-size: contain;
-    background: no-repeat;
+    background-repeat: no-repeat;
 }
 
 h1 {
