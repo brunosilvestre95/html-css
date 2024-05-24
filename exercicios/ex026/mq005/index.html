@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <i id="burguer" class="material-icons">menu</i>
-        <menu>
+        <i class="material-icons" onclick="clickMenu">menu</i><!--javascript para aparecer as opções menu ao clicar-->
+        <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -29,7 +29,21 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, incidunt porro doloremque quia dolorem fugit dicta exercitationem sed ratione esse maxime nemo. Porro quidem ducimus quas blanditiis, in repellat. Optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum dolores sequi laboriosam possimus, expedita ab unde minima? Magnam consectetur culpa laborum eum perspiciatis commodi qui iure hic iste obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laboriosam consequuntur, assumenda consectetur alias officiis. Dolor cumque natus accusamus obcaecati ullam? Deleniti voluptate commodi dolores totam possimus non, eum minima?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, incidunt porro doloremque quia dolorem fugit dicta exercitationem sed ratione esse maxime nemo. Porro quidem ducimus quas blanditiis, in repellat. Optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum dolores sequi laboriosam possimus, expedita ab unde minima? Magnam consectetur culpa laborum eum perspiciatis commodi qui iure hic iste obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laboriosam consequuntur, assumenda consectetur alias officiis. Dolor cumque natus accusamus obcaecati ullam? Deleniti voluptate commodi dolores totam possimus non, eum minima?</p>
         </article>
-    </main>
-
+    </main> 
+    <!--
+        EM JAVASCRIPT QUANDO SE USA O SINAL DE IGUAL
+            IGUAL: ==
+            RECEBE: =
+            SE NÃO: ELSE
+    -->
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
