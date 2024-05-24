@@ -2,4 +2,93 @@
 
 /* Todas as demais mídias */
 
+/* Recomendaçoes do W3C 
+Typical Device Breakpoints 
+-------------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+-------------------------------
+Exemplo de código css para mobile:
+@media screen and (max-width: 600px){
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {} CELULAR
+
+@media screen and (min-width: 768px) and (max-width: 992px) {} TABLET
+
+
+
+@media screen and (min-with: 992px) and (max-with: 1200px) {} DESKTOP
+
+@media screen and (min-with: 1200px) {} GRANDES TELAS
+
+*/
+
+@media print { /* IMPRESSÃO */
+
+    * {        font-family: 'Courier New', Courier, monospace; }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Desnecesário */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tabelt { display:none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-with: 992px) and (max-with: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display:none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+    }
+@media screen and (min-with: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone { display: none; }
+    img#tablet { display:none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
+} 
