@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+
+        }
+
+                    /* 
+                ****ALINHAMENTO DOS EIXOS****
+
+                    ****           ****
+                        EIXO PRINCIPAL
+                    ****           ****
+                        o mesmo serve para 
+                            column
+                            ou
+                            row
+
+                flex-flow: row nowrap;
+                    mesmo diminuindo o tamanho do container, ele não vai ter quebra dos itens internos, eles não vão passar outra dimensão do eixo transversal
+
+                justify-content
+                    ele faz o alinhamento em relação ao main-axis eixoprincipal
+                    seja row ou column
+
+                tem o eixo principal
+                    main-axis
+                        e no main-axis
+                        tem o main-start 
+                        e o main-end
+
+
+                justify-content: flex-start;
+                o primeiro item gruda no main start
+                    caso haja um espaço livre no final,
+                    esse final fica no main-end
+                    final do eixo principal
+
+                justify-content: flex-end;
+                o ultimo item será grudado no main-end, sempre grudado no final
+                    e o espaço branco gruda no main-start, no começo do eixo principal
+                
+                justify-content: center;
+                    centraliza os itens juntos no centro do main-axis eixo-principal
+
+                justify-content: space-between;
+                    coloca um espaçamento entre os itens,
+                    o primeiro item fica no começo do main-start
+                    um espaçamento dividindo entre o item do centro
+                    e o ultimo item colocado no final do main-end
+                
+                justify-content: space-evenly;
+                    antes e depois dos itens,
+                    entre todos os itens,
+                    no começo e depois de cada item,
+                    tera um espaçamento exatamente igual entre cada item
+
+                justify-content: space-around;
+                    divide o espaço em branco no container e divide entre os 3 itens, e um espaço menor no main-start e o main-end
+
+                ****            ****
+                    ALINHAMENTO
+                    DO
+                    EIXO-TRANSVERSAL
+                    DO CROSS-AXIS
+                ****            ****
+                ao invés de usar justify-content, se usa align-items
+
+                align-items
+                sempre no sentido do cross-axis eixo-transversal
+
+                no row, o cross axis fica de cima para baixo, cross-start e cross-end,
+                para alinhar no cross-axis, é preciso aumentar o container
+                
+
+                align-items: stretch;
+                    stretch = esticar
+                    se aumentar o cross-axis, ele estica os elementos
+
+                align-items:flex-start;
+                    gruda os items no inicio do cross-start, o espaço vazio fica no cross-end
+
+                align-items: flex-end;
+                    os items grudam no final do cross-end
+
+                align-items: center;
+                    ele centraliza os itens,
+                    um espaçamento no cross-start e no cross-end
+                
+                */
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+   </div>
+</body>
+</html>
