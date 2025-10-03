@@ -1,0 +1,73 @@
+Simplificando com Números de Linha
+Neste exemplo, o objetivo é fazer com que o elemento .caixa comece na linha de linha 1 e vá até a 4, e comece na linha de coluna 1 e vá até a 3.
+
+Forma Completa:
+
+CSS
+
+.caixa {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+Esta é a forma mais verbosa e explícita. Cada propriedade define claramente o início e o fim do item nas linhas e colunas do grid.
+
+Simplificada 1 (usando grid-row e grid-column):
+
+CSS
+
+.caixa {
+    grid-row: 1 / 4;      /* start / end */
+    grid-column: 1 / 3;   /* start / end */
+}
+Aqui, grid-row e grid-column são propriedades abreviadas (shorthands). O valor antes da barra (/) é o start (início) e o valor depois da barra é o end (fim). É uma maneira mais limpa e comum de escrever.
+
+Simplificada 2 (usando grid-area):
+
+CSS
+
+.caixa {
+    grid-area: 1 / 1 / 4 / 3;
+}
+A propriedade grid-area é a forma mais compacta. A ordem dos valores é: grid-row-start / grid-column-start / grid-row-end / grid-column-end.
+
+
+
+
+Simplificando com a palavra-chave span
+Neste segundo cenário, em vez de definir a linha final, declaramos quantas trilhas (linhas ou colunas) o item deve ocupar, usando a palavra-chave span. O resultado visual é o mesmo do primeiro exemplo.
+
+Forma Completa:
+
+CSS
+
+.caixa {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: span 3;  /* Ocupa 3 trilhas de linha */
+    grid-column-end: span 2; /* Ocupa 2 trilhas de coluna */
+}
+Aqui, dizemos que o item começa na linha 1 e deve se estender por 3 trilhas de linha. O mesmo para as colunas, começando na 1 e se estendendo por 2 trilhas.
+
+Simplificada 1 (usando grid-row e grid-column):
+
+CSS
+
+.caixa {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+Funciona da mesma forma que o primeiro exemplo. O valor depois da barra indica a expansão (span) a partir da linha de início.
+
+Simplificada 2 (usando grid-area):
+
+CSS
+
+.caixa {
+    grid-area: 1 / 1 / span 3 / span 2;
+}
+Novamente, a forma mais enxuta, seguindo a mesma ordem (row-start / column-start / row-end / column-end), mas usando span para definir a expansão.
+
+Resumo
+As imagens ilustram as diferentes maneiras de se escrever a mesma regra de posicionamento no CSS Grid, desde a mais detalhada até a mais abreviada. A escolha entre elas geralmente depende da preferência do desenvolvedor ou da complexidade do layout. Para layouts simples, grid-area pode ser muito prático. Para maior clareza, a forma grid-row e grid-column é frequentemente preferida.
