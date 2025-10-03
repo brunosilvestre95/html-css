@@ -56,3 +56,28 @@ Neste exemplo: São criadas três linhas, cada uma com uma altura fixa de 100 pi
         Função: Define o espaçamento (o vão) entre as colunas e as linhas. Ele cria um espaço de 20px ao redor de cada item interno do grid.
 
 Observação: A sintaxe mais moderna e recomendada para esta propriedade hoje é gap: 20px;, que faz a mesma coisa.
+
+Propriedades de Container do Grid Layout (Resumo)
+    A imagem categoriza as principais propriedades de um contêiner grid em dois grupos funcionais:
+
+1. Propriedades de Estrutura (marcadas com ✓):
+Este grupo é responsável por definir a estrutura fundamental da grade.
+
+    display: Ativa o comportamento de grid no contêiner.
+
+    grid-template-columns: Define o número e o tamanho das colunas.
+
+    grid-template-rows: Define o número e o tamanho das linhas.
+
+    gap: Controla o espaçamento entre as linhas e colunas.
+
+2. Propriedades de Alinhamento (marcadas com ▸):
+Este grupo controla como os itens e o próprio conteúdo da grade são alinhados e distribuídos dentro do espaço do contêiner.
+
+    align-items: Alinha os itens no eixo vertical (altura) dentro de suas respectivas células.
+
+    justify-items: Alinha os itens no eixo horizontal (largura) dentro de suas respectivas células.
+
+    align-content: Gerencia o espaço vertical de todo o bloco de células do grid, quando há espaço sobrando no contêiner.
+
+    justify-content: Gerencia o espaço horizontal de todo o bloco de células do grid, quando há espaço sobrando no contêiner.
