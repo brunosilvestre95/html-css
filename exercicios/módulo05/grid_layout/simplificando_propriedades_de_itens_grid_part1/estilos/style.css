@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div.container{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    border: 3px solid green;
+    background-color: blueviolet;
+}
+
+div.container > div.caixa1{
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    border: 3px dashed darkred;
+    background-color: green;
+}
+
+div.container > div.caixa2{    
+    grid-row: 2 / 4;
+    grid-column: 1 / 5;
+    border: 3px dashed darkred;
+    background-color: blue;
+}
+
+
+
+div.container > div.caixa3{
+    grid-row: 2 / 4;
+    grid-column: 3 / 5;
+    background-color: yellow;
+    border: 3px dashed darkred ;
+}
