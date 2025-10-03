@@ -81,3 +81,29 @@ Este grupo controla como os itens e o próprio conteúdo da grade são alinhados
     align-content: Gerencia o espaço vertical de todo o bloco de células do grid, quando há espaço sobrando no contêiner.
 
     justify-content: Gerencia o espaço horizontal de todo o bloco de células do grid, quando há espaço sobrando no contêiner.
+
+Propriedades Adicionais e Atalhos do Container Grid
+
+Esta lista mostra propriedades de contêiner que oferecem mais controle sobre o grid e maneiras mais concisas de escrever o código.
+
+    grid-auto-row
+
+Função: Define a altura para as linhas que são criadas implicitamente. Uma linha implícita surge quando você posiciona um item em uma linha que não foi pré-definida com grid-template-rows.
+
+    grid-auto-column
+
+Função: O mesmo que a propriedade anterior, mas para colunas. Define a largura de colunas criadas implicitamente.
+
+    place-items
+
+Função: É um atalho (shorthand) que define align-items e justify-items ao mesmo tempo. É usado para alinhar os itens dentro de suas células em ambos os eixos (vertical e horizontal).
+
+Exemplo: place-items: center; é o mesmo que align-items: center; e justify-items: center;.
+
+    place-content
+
+Função: É um atalho para align-content e justify-content. Alinha o conteúdo inteiro do grid (o bloco de células) dentro do contêiner quando há espaço extra.
+
+    grid-template
+
+Função: É um atalho poderoso para definir grid-template-rows, grid-template-columns e grid-template-areas em uma única declaração, permitindo criar estruturas de grid complexas de forma muito compacta.
