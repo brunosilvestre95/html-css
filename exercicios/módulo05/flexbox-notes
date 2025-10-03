@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
-<style>
+
         /*
         basicamente display flex funciona para que as caixas sejam maleáveis, responsivas, de acordo com o tamanho de cada tela
         
@@ -365,11 +359,3 @@
                 */
 
             /* Enquanto estiver desenvolvendo, usar pontilhado nas caixas pode ajudar a acompanhar o compartamento */
-</style>
-</head>
-<body>
-
-
-    
-</body>
-</html>
