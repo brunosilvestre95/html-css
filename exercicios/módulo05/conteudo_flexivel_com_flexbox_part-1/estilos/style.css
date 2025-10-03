@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*
+Paleta de Cores Cyberpunk: "Névoa de Neo-Kyoto"
+Fundo Principal (Deep Void): #0a0a0f
+
+Uso: Para o body da página, o fundo escuro principal. É um preto com um leve toque azulado/roxo, que cria a base perfeita para os outros tons se destacarem.
+
+Conteúdo Flexível (Metal Urbano): #1e202b
+
+Uso: Para a área de conteúdo principal (a seção cinza no seu exemplo). É um cinza-azulado bem escuro, que se diferencia do fundo mas mantém a atmosfera sombria e tecnológica.
+
+Destaque Principal (Cyber Pink): #ff00e5
+
+Uso: Para títulos principais (h1, h2), links importantes e elementos que precisam de atenção imediata. Este rosa neon vibrante é um clássico do gênero Cyberpunk.
+
+Destaque Secundário (Cyan Elétrico): #00f2ea
+
+Uso: Para links (a), bordas sutis, ícones ou como cor de hover. Ele complementa o rosa perfeitamente e remete às luzes de neon e interfaces holográficas.
+
+Texto (Quase Branco): #e1e1e1
+
+Uso: Para o texto geral dos parágrafos (p). Usar um branco puro (#ffffff) pode ser cansativo para os olhos em um fundo escuro. Este tom levemente acinzentado garante conforto na leitura sem perder o contraste.
+
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0f;
+    color: #e1e1e1;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 100vw;
+    height: 100vh;
+}
+p {
+    color: #FFFF;
+}
+
+h1, h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+p, h1, h2{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* EFEITO NEON */
+h1.outline-text-normal, h2.outline-text-normal {
+  color: transparent;
+  -webkit-text-stroke: 1px #ff00e5;
+  text-shadow: none;
+}
+
+h1.outline-glow-normal, h2.outline-glow-normal {
+  color: transparent;
+  -webkit-text-stroke: 1px #ff00e5;
+  text-shadow:
+    0 0 7px rgba(255, 0, 229, 0.7),
+    0 0 15px rgba(255, 0, 229, 0.5);
+}
+
+h1.outline-glow, h2.outline-glow {
+  color: transparent;
+  -webkit-text-stroke: 1px #00f2ea; /* Contorno ciano */
+  text-stroke: 1px #00f2ea;
+  text-shadow:
+    0 0 7px rgba(0, 242, 234, 0.5), /* Brilho ciano suave */
+    0 0 15px rgba(0, 242, 234, 0.3);
+}
+
+header, section.normal{
+    background-color: #ff00e613;
+    padding: 20px;
+}
+
+section.flex-content{
+    background-color: #1e202b;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 500px;
+}
+
+article > div.media{
+    flex: 1 0 400px;
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+}
