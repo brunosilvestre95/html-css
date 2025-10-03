@@ -1,0 +1,58 @@
+notes
+----        CSS Grid Layout     ----
+
+o que é Grid Layout?
+    CSS Grid Layout é um sistema para criação de layout baseado em uma grade bidimensional e otimizado para design de interfaces de usuário. Nesse modelo de grade, os elementos-filhos do contêiner que defina a grade podem ser posicionados livremente em espaços criados na estrutura, quer ela tenha sido definida com suas dimensões flexíveis ou fixas.
+
+
+A Anatomia de um Grid
+    Grid Container: É o elemento pai que define o contexto do grid. Na imagem, é representado pela borda amarela que envolve toda a estrutura. É neste contêiner que as propriedades do grid, como o número de colunas e linhas, são definidas.
+
+    Grid Item: São os elementos filhos diretos do grid container. Na imagem, um grid item é exemplificado pelo quadrado preenchido em amarelo, que ocupa uma célula dentro da grade. Cada item pode ser posicionado individualmente dentro da estrutura do grid.
+
+Grid (Tracks)
+
+    Grid Track: É o termo geral para o espaço entre duas linhas de grade adjacentes. Existem dois tipos de tracks:
+
+    Column Track (Faixa de Coluna): É o espaço entre duas linhas verticais da grade. Essencialmente, define a largura de uma coluna. Na imagem, é a faixa vertical destacada em amarelo.
+
+    Row Track (Faixa de Linha): É o espaço entre duas linhas horizontais da grade, definindo a altura de uma linha. Na imagem, é a faixa horizontal destacada em amarelo.
+
+(Posicionando Itens)
+    Esta imagem é um exemplo prático de como as linhas numeradas são usadas para posicionar um item dentro do grid.
+
+    O Exemplo: Um item (a barra amarela) está posicionado para começar na linha de coluna 2 e terminar na linha de coluna -2.
+
+    A Sintaxe CSS: No código, isso seria escrito de forma abreviada como:
+        
+        grid-column: 2 / -2;
+
+            2 (grid-column-start): O item se inicia na segunda linha de coluna, contada da esquerda para a direita.
+
+            -2 (grid-column-end): O item termina na penúltima linha de coluna, contada da direita para a esquerda.
+
+    Este é um excelente exemplo de como a combinação de números positivos e negativos torna o CSS Grid poderoso, permitindo que você posicione elementos de forma precisa e flexível, relacionando-os tanto ao início quanto ao fim do contêiner.
+
+Propriedades de Container do Grid Layout
+
+    display: grid;
+
+        Função: É a propriedade fundamental que transforma o elemento div.container em um contêiner de grid. A partir deste ponto, seus filhos diretos (os quadrados de A a G) passam a se comportar como itens de grid.
+
+    grid-template-columns: auto auto auto;
+
+        Função: Define o número e a largura das colunas.
+
+Neste exemplo: O código cria três colunas. O valor auto para cada uma instrui o navegador a dimensionar a largura delas automaticamente, com base no conteúdo e no espaço disponível.
+
+    grid-template-rows: 100px 100px 100px;
+
+        Função: Define o número e a altura das linhas.
+
+Neste exemplo: São criadas três linhas, cada uma com uma altura fixa de 100 pixels.
+
+    grid-gap: 20px;
+
+        Função: Define o espaçamento (o vão) entre as colunas e as linhas. Ele cria um espaço de 20px ao redor de cada item interno do grid.
+
+Observação: A sintaxe mais moderna e recomendada para esta propriedade hoje é gap: 20px;, que faz a mesma coisa.
