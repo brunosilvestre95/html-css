@@ -28,6 +28,7 @@ body{
   background-color: var(--fundo-principal);
 }
 
+/* MENU */
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -56,3 +57,4 @@ nav#menu a:hover{
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+/* FIM MENU */
