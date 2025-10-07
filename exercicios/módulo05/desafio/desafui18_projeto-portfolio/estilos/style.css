@@ -123,8 +123,7 @@ article{
 
 article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
-
+  margin-bottom: 20px;
 }
 
 .video-container{
@@ -142,6 +141,74 @@ article h2{
   height: 100%;
   border-radius: 8px;
 }
+/* SKILLS */
+#skill-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#skill-container .nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+#skill-container .porcent{
+  font-weight: bold;
+  color: var(--destaque);
+}
+#skill-container .barra{
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+#skill-container .progresso{
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
 
+#formacao-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
 /* FIM MAIN */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px){
+  #skill-container{
+     grid-template-columns: 1fr 1fr;
+  }
+}
